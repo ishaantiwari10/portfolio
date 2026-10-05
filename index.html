@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishaan Tiwari | Portfolio</title>
+    <style>
+        /* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #111;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00adb5;
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #00adb5;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero .highlight {
+    color: #00adb5;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00adb5;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #008c95;
+}
+
+/* Common Layout Containers */
+.container {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+.container h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.container h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #00adb5;
+    margin: 10px auto 0;
+}
+
+/* Project Cards Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: left;
+    border-top: 4px solid #00adb5;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color: #111;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">IT</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hi, I am <span class="highlight">Ishaan Tiwari</span></h1>
+        <p>AI & Computer Science Student | Tech Enthusiast</p>
+        <a href="#about" class="btn">Explore Profile</a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Born on <strong>June 4, 2009</strong> in <strong>Nagpur</strong>, I am a driven software engineering student focusing heavily on Artificial Intelligence, Data Science, and core application development. I love building smart systems and exploring advanced computing concepts.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container bg-light">
+        <h2>Education</h2>
+        <div class="project-grid">
+            <div class="card">
+                <h3>BS in Data Science and Management</h3>
+                <h4>IIT Madras (Class of 2030)</h4>
+                <p>Focusing on statistical modeling, data management practices, and data-driven operational strategies.</p>
+            </div>
+            <div class="card">
+                <h3>Bachelors in AI and CS</h3>
+                <h4>Scaler School of Technology (Class of 2030)</h4>
+                <p>Specializing in computational intelligence, algorithmic optimization, and modern software development ecosystem.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="project-grid" style="grid-template-columns: 1fr;">
+            <div class="card">
+                <h3>Google Student Ambassador</h3>
+                <h4>Leadership & Tech Outreach</h4>
+                <p>Actively driving community engagement, technical knowledge sharing, and fostering tech ecosystems among student peers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container bg-light">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Java</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ishaan Tiwari. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
